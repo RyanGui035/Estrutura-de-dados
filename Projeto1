@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "conio2.h"
+
+main() {
+   int valor,i;
+   system("color f3"); //Mudar a cor do fundo
+   printf("Digite um valor ");  
+   scanf("%d",&valor);
+   for(i=0; i<10; i++){ //Imprimir x10
+    gotoxy(30,12+i); //Texto descer
+    textcolor(1+i); //Mudar cor do texto
+    printf("Valor digitado foi %d ",valor); 
+    sleep(1); // Pausa temporaria 
+    system("cls"); // Limpar a tela
+    sleep(1);
+   } 
+}
